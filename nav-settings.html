@@ -1,0 +1,27 @@
+<ion-view view-title="Navigator Settings" class="view">
+ <ion-nav-bar class="bar-dark">
+   <ion-content>
+   	  <div class="card" ng-controller="GeoSmsController"> <!-- Lat Long Home Buttons -->
+	   
+	   <div class="row">
+			<div class="col col-center text-center">
+				<h4 class="gray">Home Coordinates</h4>
+			</div>
+		</div>
+	   	  <button class="button  button-light button-clear button-outline button-block " ng-click="saveLatLongs()">Save Coordinates </button>
+		<button class="button  button-light button-clear button-outline button-block" ng-click="loadLats()">Load Coordinates </button>
+	  
+	  </div>	  
+	   <div class="card" ng-controller="GeoSmsController"> <!-- Lat Long Work Buttons -->
+		 <div class="row">
+			<div class="col col-center text-center">
+				<h4 class="gray">Work Coordinates</h4>
+			</div>
+		</div>
+	     	<button class="button  button-light button-clear button-outline button-block " ng-click="saveLatLongsW()">Save Coordinates </button>
+		<button class="button  button-light button-clear button-outline button-block" ng-click="loadLatsW()">Load Coordinates </button>
+	  
+	  </div>
+   </ion-content> 
+  </ion-nav-bar >
+</ion-view>

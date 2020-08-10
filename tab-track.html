@@ -1,0 +1,28 @@
+<ion-view view-title="Track" class="view" >
+  <ion-nav-bar class="bar-dark">
+  <ion-content class="has-header" ng-controller="swipeCtrl" on-swipe-right="goBack()" on-swipe-left="goForward()">
+  <br>
+  	 <div  ng-controller="GeoSmsController" >
+		<pre id="geoID2" ></pre>		
+	</div> 
+	 
+	<div class="row" ng-controller="GeoSmsController">
+		<div class="col text-center">
+		<button class="button button-full button-positive " id="smsButton" ng-click="sendSms()">send sms </button>
+		</div>
+	</div>
+		
+		
+	  <div class="row" ng-controller="GeoSmsController">
+		<div class="col">
+			<button class="button button-full button-positive " id="emailButton" ng-click="sendEm()">send email </button>
+				
+		</div>
+	  </div>
+
+	
+
+<pre id="geoID" style="visibility: hidden" style="background:#303030"></pre> 	
+  </ion-content>
+ </ion-nav-bar >
+</ion-view>

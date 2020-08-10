@@ -1,0 +1,28 @@
+Ion-view
+<ion-view view-title="Track Settings" class="view">
+ <ion-nav-bar class="bar-dark">
+   <ion-content>
+	<div class="list" ng-controller="GeoSmsController">
+		<!-- SMS Entry -->
+		<label class="item item-input item-stacked-label" id="phoneID">
+		<span class="input-label">Phone Number:</span>
+		<input id="numberTxt" placeholder="Enter mobile number"  type="tel" />
+		</label>
+				
+		<!-- Email Entry -->
+		<label class="item item-input item-stacked-label" id="emailID">
+		<span class="input-label">Email:</span>
+		<input id="emailTxt" placeholder="Enter Email Address"  type="email" />
+		</label>	
+		<div class="row">
+		<div class="col text-left">
+		<button class="button  button-light button-clear button-outline button-block" ng-click="saveSms();saveEmail();">Save </button>
+		</div>	
+		<div class="col text-right">
+<button class="button  button-light button-clear button-outline button-block" ng-click="loadSms();loadEmail();">Load </button>
+</div>
+</div>	
+</div>   
+   </ion-content> 
+  </ion-nav-bar >
+</ion-view>
